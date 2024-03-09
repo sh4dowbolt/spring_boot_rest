@@ -23,7 +23,7 @@ public class RestController {
         return employeeList;
     }
 
-   /* @GetMapping("/employees/{id}")
+    @GetMapping("/employees/{id}")
     public Employee getEmployee(@PathVariable int id) {
         Employee employee=employeeService.getEmployee(id);
 
@@ -52,6 +52,6 @@ public class RestController {
 
             employeeService.deleteEmployee(id);
             return "Employee with id= "+id+" was deleted";
-    }*/
+    }
 
 }
